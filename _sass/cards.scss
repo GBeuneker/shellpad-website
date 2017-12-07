@@ -2,21 +2,21 @@
 {
   width: 100%;
   height: 100%;
-  text-align: center;
-  margin: auto;
-  padding: auto;
 }
 
 .card
 {
   width: 100%;
-  text-decoration: none;
-  text-align: left;
-  background-color: #333;
-  color: #ddd;
+  max-width: 500pt;
   height: 150pt;
   padding: 0;
   margin: 10pt;
+
+  text-decoration: none;
+  text-align: left;
+  background-color: #333;
+  display: inline-block;
+  color: #ddd;
 }
 
 .card:hover

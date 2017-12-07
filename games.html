@@ -9,22 +9,25 @@ permalink: /games/
 	{% for post in site.posts %}
 	{% if post.category == "game"%}
 
-	<a class="card col-xs-12" href="{{site.baseurl}}{{post.url}}">
-	  <div class="card-image">
-	    <img src="{{site.baseurl}}{{post.images[0].url}}"/>
-	  </div>
+	<div class="col-md-12">
+		<a class="card" href="{{site.baseurl}}{{post.url}}">
+		  <div class="card-image">
+		    <img src="{{site.baseurl}}{{post.images[0].url}}"/>
+		  </div>
 
-	  <div class="card-text">
-	    <div class="card-title">
-	      <h1>{{post.title}}</h1>
-	    </div>
+		  <div class="card-text">
+		    <div class="card-title">
+		      <h1>{{post.title}}</h1>
+		    </div>
 
-	    <div class="card-excerpt">
-	      <p>{{post.excerpt}}</p>
-	    </div>
-	  </div>
+		    <div class="card-excerpt">
+		      <p>{{post.excerpt}}</p>
+		    </div>
+		  </div>
 
-	</a>
+		</a>
+	</div>
+
 	{% endif %}
 	{% endfor %}
 
