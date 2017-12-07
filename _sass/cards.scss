@@ -1,0 +1,47 @@
+.cards
+{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+.card
+{
+  width: 100%;
+  text-decoration: none;
+  text-align: left;
+  background-color: #333;
+  color: #ddd;
+  height: 150pt;
+  padding: 0;
+  margin: 10pt;
+}
+
+.card:hover
+{
+  text-decoration: none;
+  color: #bbb;
+  background-color: #222;
+}
+
+.card:hover image
+{
+  color: #ddd;
+}
+
+.card-image
+{
+  height: 100%;
+  padding: 0;
+  margin: 0 5pt 0 0 ;
+  float: left;
+}
+
+.card-image img
+{
+  height: 100%;
+  width: 150pt;
+  opacity: 0.9;
+}

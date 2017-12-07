@@ -1,0 +1,24 @@
+<header>
+
+<div class="header-logo">
+  <a href="{{site.baseurl}}/home">
+    <img src="{{site.baseurl}}/assets/images/shellpad-logo.png" alt="Geared Logo">
+  </a>
+</div>
+
+<nav class="header-navbar">
+  <ul>
+    <li>
+      <a class="nav-element" id="{% if page.id == "games" or page.category == "game" %}active{%endif%}" href="{{site.baseurl}}/games">games</a>
+    </li>
+    <li>
+      <a class="nav-element" id="{% if page.id == "applications" or page.category == "applications" %}active{%endif%}" href="{{site.baseurl}}/applications">applications</a>
+    </li>
+    <li>
+      <a class="nav-element" id="{% if page.id == "partners" %}active{%endif%}" href="{{site.baseurl}}/partners">partners</a>
+    </li>
+  </ul>
+</nav>
+
+<hr>
+</header>

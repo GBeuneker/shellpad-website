@@ -1,0 +1,72 @@
+header hr
+{
+  border-color: #000;
+  display: block;
+  width: 50%;
+}
+
+.header-logo
+{
+  margin: auto;
+  width: 500px;
+}
+
+.header-logo img
+{
+  margin: auto;
+  width: 100%;
+}
+
+//----------HEADER NAVIGATION BAR----------
+.header-navbar
+{
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+  border-width: 0;
+  height: 50px;
+}
+
+.header-navbar ul
+{
+  display: inline-block;
+  overflow: hidden;
+  list-style-type: none;
+
+  height: 100%;
+}
+
+.header-navbar li
+{
+  float: left;
+
+  margin: 0px;
+  height: 100%;
+}
+
+.header-navbar a
+{
+  display: block;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+
+  font-family: "Century Gothic", sans-serif;
+
+  padding: 24px 16px 16px 16px;
+  margin: 0px;
+
+  color: #3a3a3a;
+}
+
+.header-navbar a:hover
+{
+  font-weight: bolder;
+}
+
+#active
+{
+  font-weight: bolder;
+}
