@@ -1,3 +1,4 @@
+/*--------------------CARDS--------------------*/
 .cards
 {
   width: 100%;
@@ -19,7 +20,7 @@
   color: #ddd;
 }
 
-.card:hover
+.card:hover, .card:active, .card:focus
 {
   text-decoration: none;
   color: #bbb;
@@ -44,4 +45,38 @@
   height: 100%;
   width: 150pt;
   opacity: 0.9;
+}
+
+/*--------------------LOGOS--------------------*/
+.logo
+{
+  width: 100%;
+  max-width: 500pt;
+  height: 100pt;
+  padding: 0;
+  margin: 25pt 0 25pt 0;
+
+  text-decoration: none;
+  background-color: none;
+  display: inline-block;
+  color: #333;
+}
+
+.logo-image img
+{
+  height: 100%;
+  width: auto;
+  padding: 0;
+}
+
+.logo-image:hover
+{
+  transition: opacity 0.2s ease;
+  opacity: 0.8;
+}
+
+.logo-image
+{
+  transition: opacity 0.2s ease;
+  opacity: 1.0;
 }

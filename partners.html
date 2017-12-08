@@ -10,24 +10,13 @@ permalink: /partners/
 	{% if post.category == "partner"%}
 
 	<div class="col-md-12">
-		<a class="card" href="{{site.baseurl}}{{post.url}}">
-		  <div class="card-image">
-		    <img src="{{site.baseurl}}{{post.images[0].url}}"/>
+		  <div class="logo-image">
+				<a class="logo" href="{{post.site}}">
+		    	<img src="{{site.baseurl}}{{post.images[0].url}}"/>
+				</a>
 		  </div>
-
-		  <div class="card-text">
-		    <div class="card-title">
-		      <h1>{{post.title}}</h1>
-		    </div>
-
-		    <div class="card-excerpt">
-		      <p>{{post.excerpt}}</p>
-		    </div>
-		  </div>
-
-		</a>
 	</div>
-	
+
 	{% endif %}
 	{% endfor %}
 

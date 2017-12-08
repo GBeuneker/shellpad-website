@@ -6,6 +6,10 @@ $(window).on('resize', function(){
  pushFooterDown();
 });
 
+$(window).load(function() {
+      pushFooterDown();
+});
+
 function pushFooterDown()
 {
   if($(document).height() <= $(window).height())
