@@ -17,7 +17,7 @@ title: Shellpad Interactive
 email: shellpadinteractive@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio website for freelance software and game programmer company Shellpad Interactive.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "http://www.shellpadinteractive.com" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
