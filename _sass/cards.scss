@@ -16,7 +16,8 @@
   text-decoration: none;
   text-align: left;
   display: inline-block;
-  background-color: #3E4739;
+  transition: background-color 0.1s ease;
+  background-color: #3A3A3A;
 
   border-radius: 10pt 50pt 10pt 50pt;
 }
@@ -27,9 +28,10 @@
 
 .card:hover, .card:active, .card:focus
 {
+  transition: background-color 0.1s ease;
   text-decoration: none;
   color: #bbb;
-  background-color: #2D3329;
+  background-color: #333;
 }
 
 .card-image

@@ -50,19 +50,21 @@ header hr
   display: block;
 
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14pt;
   font-weight: normal;
 
   font-family: "Comfortaa", sans-serif;
 
-  padding: 24px 16px 16px 16px;
-  margin: 0px;
+  padding: 20pt 12pt 12pt 12pt;
+  margin: 0;
 
+  transition: color 0.1s ease;
   color: #3a3a3a;
 }
 
 .header-navbar a:hover
 {
+  transition: color 0.1s ease;
   color: #777;
 }
 
