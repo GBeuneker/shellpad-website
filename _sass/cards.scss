@@ -16,32 +16,26 @@
   text-decoration: none;
   text-align: left;
   display: inline-block;
-  background-color: #3A3A3A;
-  color: #EBF7E4;
+  background-color: #3E4739;
 
   border-radius: 10pt 50pt 10pt 50pt;
+}
+
+.card p, .card h1{
+    color: #EBF7E4;
 }
 
 .card:hover, .card:active, .card:focus
 {
   text-decoration: none;
   color: #bbb;
-  background-color: #222;
-}
-
-.card:hover image
-{
-  color: #ddd;
-}
-
-.card h1
-{
-  color: #EBF7E4;
+  background-color: #2D3329;
 }
 
 .card-image
 {
-  height: 100%;
+  height: auto;
+  width: 150pt;
   padding: 0;
   margin: 0 5pt 0 0 ;
   float: left;
@@ -50,9 +44,14 @@
 .card-image img
 {
   height: 100%;
-  width: 150pt;
+  width: 100%;
   opacity: 0.9;
   border-radius: 10pt 0 0 50pt;
+}
+
+.card-excerpt
+{
+  margin: 10pt;
 }
 
 /*--------------------LOGOS--------------------*/

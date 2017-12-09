@@ -1,0 +1,27 @@
+/*--------------------CARDS--------------------*/
+.card
+{
+  height: 400pt;
+}
+
+.card-image
+{
+  width: 220pt;
+  margin: 0;
+  float:right;
+}
+
+.card-image img{
+  border-radius: 0 50pt 0 0;
+  margin: 0;
+}
+
+.card-excerpt
+{
+  margin-left: 10pt;
+}
+
+.card-title
+{
+  margin-left: 10pt;
+}
