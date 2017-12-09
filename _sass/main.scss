@@ -1,10 +1,16 @@
 /*--------------------GENERAL--------------------*/
-p{
+h1, h2, h3 {
+	font-family: 'Comfortaa';
+	font-weight: bolder;
+	color: #3A3A3A;
+}
+
+p {
 	font-size: 16px;
+	font-family: 'PT Sans';
 }
 
 html {
-	font-family: 'Raleway';
 	background-color: #E0FFCD;
 }
 
