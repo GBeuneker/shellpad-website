@@ -2,9 +2,12 @@
 # The final css file.
 ---
 
-@import "fonts";
-@import "main";
-@import "header";
-@import "footer";
-@import "cards";
-@import "post";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "portfolio.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "bootstrap-overrides.scss";

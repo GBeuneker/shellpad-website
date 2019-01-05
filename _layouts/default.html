@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-      <meta charset="utf-8">
-			<title>Shellpad Interactive</title>
-			<link rel="icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
-			<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+<html lang="en">
 
-			<!-- externals -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<head>
 
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css">
-			<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="{{site.baseurl}}/main_mobile.css"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-			<!-- scripts -->
-			<script src="{{site.baseurl}}/assets/javascripts/main.js"></script>
+	<title>Freelancer - Start Bootstrap Theme</title>
 
-		</head>
-		<body>
-			<input type="hidden" value="{{site.baseurl}}" id="baseurl"/>
-      {% include header.html %}
+	<!-- Bootstrap core CSS -->
+	<link href="external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-				{{ content }}
+	<!-- Custom fonts for this template -->
+	<link href="external/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-      {% include footer.html %}
-		</body>
-	</html>
+	<!-- Plugin CSS -->
+	<link href="external/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css">
+
+	</head>
+
+	<body id="page-top">
+		{{ content }}
+	</body>
+	
+</html>
