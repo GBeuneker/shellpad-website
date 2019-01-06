@@ -12,9 +12,9 @@ h6 {
   @include heading-font;
 }
 
-// Custom Horizontal Rule with Star Icon
-hr.star-light,
-hr.star-dark {
+// Custom Horizontal Rule with shell Icon
+hr.shell-light,
+hr.shell-dark {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -26,32 +26,32 @@ hr.star-dark {
   margin-right: auto;
 }
 
-hr.star-light:after,
-hr.star-dark:after {
+hr.shell-light:after,
+hr.shell-dark:after {
   position: relative;
   top: -.8em;
   display: inline-block;
   padding: 0 0.25em;
-  content: '\f005';
+  content: url("assets/img/shell.png");
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 2em;
 }
 
-hr.star-light {
+hr.shell-light {
   border-color: $white;
 }
-hr.star-light:after {
+hr.shell-light:after {
   color: $white;
-  background-color: $primary;
+  background-color: $secondary;
 }
 
-hr.star-dark {
+hr.shell-dark {
   border-color: $dark;
 }
-hr.star-dark:after {
+hr.shell-dark:after {
   color: $dark;
-  background-color: $secondary;
+  background-color: $primary;
 }
 
 // Section Padding Settings

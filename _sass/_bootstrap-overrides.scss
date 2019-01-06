@@ -1,10 +1,10 @@
 // Bootstrap overrides for this template
 a {
-  color: $primary;
+  color: $secondary;
   &:focus,
   &:hover,
   &:active {
-    color: darken($primary, 10%);
+    color: darken($secondary, 10%);
   }
 }
 
@@ -37,6 +37,7 @@ a {
 }
 
 .btn-primary {
+  color: $dark;
   background-color: $primary;
   border-color: $primary;
   &:hover,
@@ -44,6 +45,7 @@ a {
   &:active {
     background-color: darken($primary, 10%);
     border-color: darken($primary, 10%);
+    color: lighten($dark, 10%);
   }
 }
 
@@ -67,4 +69,15 @@ a {
     background-color: darken($dark, 10%);
     border-color: darken($dark, 10%);
   }
+}
+
+.carousel-indicators {
+  position: relative;
+
+  li {
+    height: 4pt;
+    width: 100pt;
+    border-radius: 1pt;
+  }
+
 }

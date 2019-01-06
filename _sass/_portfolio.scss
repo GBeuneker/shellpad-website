@@ -70,3 +70,18 @@
     }
   }
 }
+
+.carousel-arrows {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+
+  .carousel-control-next, .carousel-control-prev {
+    pointer-events: all;
+    top: 50%;
+    width: initial;
+    padding: 5pt;
+    z-index: 10;
+  }
+}
