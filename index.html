@@ -3,10 +3,10 @@ layout: default
 ---
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-dark fixed-top text-uppercase" id="mainNav">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">Shellpad Interactive</a>
-    <button class="navbar-toggler navbar-toggler-right text-uppercase bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars"></i>
     </button>
@@ -30,7 +30,7 @@ layout: default
 <header class="masthead bg-primary text-dark text-center">
   <div class="container">
     <img class="img-fluid mb-5 d-block mx-auto" src="assets/img/shellpad-logo.png" alt="">
-    <h1 class="text-uppercase mb-0">Shellpad Interactive</h1>
+    <h1 class="mb-0">Shellpad Interactive</h1>
     <hr class="shell-dark">
     <h2 class="font-weight-light mb-0">Game Developer - Web Developer - Tool Developer</h2>
   </div>
@@ -40,7 +40,7 @@ layout: default
 <section class="portfolio bg-secondary" id="portfolio">
 
   <div class="container">
-    <h2 class="text-center text-uppercase text-light mb-0">Portfolio</h2>
+    <h2 class="text-center text-light mb-0">Portfolio</h2>
     <hr class="shell-light mb-5">
     <div id="showcase" class="carousel slide" data-ride="carousel">
     
@@ -48,7 +48,7 @@ layout: default
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
-          <h2 class="text-center text-uppercase text-light mb-4 col-md-12">Games</h2>
+          <h3 class="text-center text-light mb-4 col-md-12">Games</h3>
           {% for post in site.posts %}
           {% if post.category == "game" %}
     
@@ -70,7 +70,7 @@ layout: default
       </div>
       <div class="carousel-item">
           <div class="row">
-            <h2 class="text-center text-uppercase text-light mb-4 col-md-12">Websites</h2>
+            <h3 class="text-center text-light mb-4 col-md-12">Websites</h3>
               {% for post in site.posts %}
               {% if post.category == "website" %}
         
@@ -92,7 +92,7 @@ layout: default
       </div>
       <div class="carousel-item">
           <div class="row">
-            <h2 class="text-center text-uppercase text-light mb-4 col-md-12">Applications</h2>
+            <h3 class="text-center text-light mb-4 col-md-12">Applications</h3>
               {% for post in site.posts %}
               {% if post.category == "application" %}
         
@@ -139,7 +139,7 @@ layout: default
 <!-- About Section -->
 <section class="bg-primary text-dark mb-0" id="about">
   <div class="container">
-    <h2 class="text-center text-uppercase text-dark">About</h2>
+    <h2 class="text-center text-dark">About</h2>
     <hr class="shell-dark mb-5">
     <div class="row">
       <div class="col-lg-4 ml-auto">
@@ -153,31 +153,29 @@ layout: default
 </section>
 
 <!-- Contact Section -->
-<section id="partners" class="partner bg-secondary">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-light mb-0">Our partners</h2>
-      <hr class="shell-light mb-5">
-      <div class="row">
-          {% for post in site.posts %}
-          {% if post.category == "partner" %}
-
-          {{post}}
-    
-          {% endif %}
-          {% endfor %}
-      </div>
-    </div>
-  </section>
-
 <section id="contact" class="bg-secondary">
+
   <div class="container">
-    <h2 class="text-center text-uppercase text-light mb-0">Contact Me</h2>
+    <h2 class="text-center text-light mb-0">Our partners</h2>
+    <hr class="shell-light mb-5">
+    <div class="row partner">
+        {% for post in site.posts %}
+        {% if post.category == "partner" %}
+
+        {{post}}
+  
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2 class="text-center text-light mb-0">Contact Me</h2>
     <hr class="shell-light mb-5">
     <div class="row">
       <div class="col-lg-12 mx-auto d-flex justify-content-center">
         <a class="btn btn-primary btn-xl" href="mailto:{{site.email}}">Send Mail</a>
       </div>
     </div>
+    
   </div>
 </section>
 
@@ -186,16 +184,16 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-3 mb-5 mb-lg-0">
-        <h4 class="text-uppercase mb-4">Location</h4>
+        <h4 class="mb-4">Location</h4>
         <p class="lead mb-0">Europalaan 400
           <br>3526KS Utrecht</p>
       </div>
       <div class="col-md-6 mb-5 mb-lg-0">
-        <h4 class="text-uppercase mb-4">Email</h4>
+        <h4 class="mb-4">Email</h4>
         <p class="lead mb-0">geert[at]shellpadinteractive.com</p>
       </div>
       <div class="col-md-3 mb-5 mb-lg-0">
-        <h4 class="text-uppercase mb-4">Info</h4>
+        <h4 class="mb-4">Info</h4>
         <p class="lead mb-0">KvK - 69023727 <br> BTW - NL217721977B01</p>
       </div>
     </div>
