@@ -20,4 +20,6 @@ github_username:  jekyll
 excerpt_separator: <!--content-->
 
 # Build settings
-markdown: kramdown
+markdown: kramdown 
+kramdown: 
+  auto_ids: 'false'
