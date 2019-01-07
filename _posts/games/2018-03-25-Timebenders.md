@@ -5,11 +5,11 @@ tag: timebenders
 
 # Featured image
 images:
-  - url: /assets/img/timebenders-small.jpg
+  - url: assets/img/timebenders-small.jpg
     alt: Game Logo
     title: Timebenders
 
-  - url: /assets/img/timebenders-large.jpg
+  - url: assets/img/timebenders-large.jpg
     alt: Game Logo
     title: Timebenders
 ---

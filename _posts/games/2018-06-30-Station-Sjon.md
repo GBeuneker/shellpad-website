@@ -5,11 +5,11 @@ tag: stationsjon
 
 # Featured image
 images:
-  - url: /assets/img/stationsjon-small.jpg
+  - url: assets/img/stationsjon-small.jpg
     alt: Game Logo
     title: Station Sjon
 
-  - url: /assets/img/stationsjon-large.jpg
+  - url: assets/img/stationsjon-large.jpg
     alt: Game Logo
     title: Station Sjon
 ---

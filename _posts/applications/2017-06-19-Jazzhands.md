@@ -5,11 +5,11 @@ tag: jazzhands
 
 # Featured image
 images:
-  - url: /assets/img/jazzhands-small.jpg
+  - url: assets/img/jazzhands-small.jpg
     alt: Application Logo
     title: Jazzhands
 
-  - url: /assets/img/jazzhands-large.jpg
+  - url: assets/img/jazzhands-large.jpg
     alt: Application Logo
     title: Jazzhands
 ---

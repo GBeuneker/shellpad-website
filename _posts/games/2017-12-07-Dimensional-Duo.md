@@ -5,11 +5,11 @@ tag: dimduo
 
 # Featured image
 images:
-  - url: /assets/img/dimensionalduo-small.jpg
+  - url: assets/img/dimensionalduo-small.jpg
     alt: Game Logo
     title: Dimensional Duo
 
-  - url: /assets/img/dimensionalduo-large.jpg
+  - url: assets/img/dimensionalduo-large.jpg
     alt: Game Logo
     title: Dimensional Duo
 ---
