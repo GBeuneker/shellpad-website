@@ -18,7 +18,7 @@ url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 excerpt_separator: <!--content-->
-google_analytics: UA-133312198-1
+google_analytics: UA-135312506-1
 
 # Build settings
 markdown: kramdown 
