@@ -14,7 +14,6 @@
       }
     }
   });
-
   // Scroll to top button appear
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
@@ -49,13 +48,38 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Modal popup$(function () {
+  // Modal pop-up
   $('.portfolio-item').magnificPopup({
     type: 'inline',
+    src: "#stationsjon",
     preloader: false,
-    focus: '#username',
+    focus: '#modal',
     modal: true
   });
+  
+ $('.open_iframe').click(function(){
+     return false;
+ });
+
+  $(document).on('click', '.portfolio-item', function(e) {
+    window.location.href = window.location + "#modal-open";
+  });
+
+  $(window).on('popstate', function(event) {
+    var url = window.location + "";
+    if(url.indexOf('#modal-open') == -1)
+      $.magnificPopup.close();
+   });
+
+
+  $(window).on("navigate", function (event, data) {
+    var direction = data.state.direction;
+    if (direction == 'back') {
+      console.log("test");
+      $.magnificPopup.close();
+    }
+  });
+
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
     $.magnificPopup.close();
