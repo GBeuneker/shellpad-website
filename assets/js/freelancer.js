@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -15,7 +15,7 @@
     }
   });
   // Scroll to top button appear
-  $(document).scroll(function() {
+  $(document).scroll(function () {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
       $('.scroll-to-top').fadeIn();
@@ -27,7 +27,7 @@
   /* ==================== NAVBAR ==================== */
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -38,7 +38,7 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -52,22 +52,23 @@
 
   /* ==================== MODALS ==================== */
   $('.portfolio-item').magnificPopup({
-    type: 'inline',
-    preloader: false,
-    focus: '#modal',
     modal: true
   });
+
+  $('.portfolio-item').on('mfpOpen', openModal);
+  $('.portfolio-item').on('mfpClose', dismissModal);
 
   // Open Modal
   function openModal(e) {
     e.preventDefault();
     window.location.href = "#modal";
   }
-   
+
   // Dismiss and close Modal
   function dismissModal(e) {
-    window.history.back(); // Trigger the back button
-    e.preventDefault(); // Do not reload page
+    if (window.location.toString().indexOf('#modal') >= 0)
+      window.history.back(); // Trigger the back button
+    e.preventDefault();
   }
 
   // Close Modal
@@ -75,27 +76,25 @@
     e.preventDefault();
     $.magnificPopup.close();
   }
-  
-  /// Modal dismiss click event
-  $(document).on('click', '.portfolio-modal-dismiss', dismissModal);
-  // Modal open click event
-  $(document).on('click', '.portfolio-item', openModal);
-  
+
+  // Modal dismiss click event
+  $(document).on('click', '.portfolio-modal-dismiss', closeModal);
+
   // Front/back button event
-  $(window).on('popstate', function(e) {
+  $(window).on('popstate', function (e) {
     // Only if the window location doesn't contain #modal
-    if(window.location.toString().indexOf('#modal') == -1)
+    if (window.location.toString().indexOf('#modal') == -1)
       closeModal(e);
   });
-  
+
   /* ==================== CONTACT FORM ==================== */
   // Floating label headings for the contact form
-  $(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+  $(function () {
+    $("body").on("input propertychange", ".floating-label-form-group", function (e) {
       $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
+    }).on("focus", ".floating-label-form-group", function () {
       $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
+    }).on("blur", ".floating-label-form-group", function () {
       $(this).removeClass("floating-label-form-group-with-focus");
     });
   });
