@@ -53,7 +53,6 @@
   /* ==================== MODALS ==================== */
   $('.portfolio-item').magnificPopup({
     type: 'inline',
-    src: "#stationsjon",
     preloader: false,
     focus: '#modal',
     modal: true
@@ -67,16 +66,8 @@
    
   // Dismiss and close Modal
   function dismissModal(e) {
-    console.log(window.location);
-    if(window.location.toString().indexOf('#modal') >= 0)
-    {
-      console.log("Reset Hashtag");
-      window.location.hash = ' ';
-      history.pushState('', document.title, window.location.pathname); // nice and clean
-    }
-
-    e.preventDefault(); // no page reload
-    closeModal(e);
+    window.history.back(); // Trigger the back button
+    e.preventDefault(); // Do not reload page
   }
 
   // Close Modal
