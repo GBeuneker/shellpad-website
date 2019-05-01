@@ -24,6 +24,8 @@
     }
   });
 
+  /* ==================== NAVBAR ==================== */
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -48,7 +50,7 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Modal pop-up
+  /* ==================== MODALS ==================== */
   $('.portfolio-item').magnificPopup({
     type: 'inline',
     src: "#stationsjon",
@@ -56,35 +58,46 @@
     focus: '#modal',
     modal: true
   });
-  
- $('.open_iframe').click(function(){
-     return false;
- });
 
-  $(document).on('click', '.portfolio-item', function(e) {
-    window.location.href = window.location + "#modal-open";
-  });
-
-  $(window).on('popstate', function(event) {
-    var url = window.location + "";
-    if(url.indexOf('#modal-open') == -1)
-      $.magnificPopup.close();
-   });
-
-
-  $(window).on("navigate", function (event, data) {
-    var direction = data.state.direction;
-    if (direction == 'back') {
-      console.log("test");
-      $.magnificPopup.close();
+  // Open Modal
+  function openModal(e) {
+    e.preventDefault();
+    window.location.href = "#modal";
+  }
+   
+  // Dismiss and close Modal
+  function dismissModal(e) {
+    console.log(window.location);
+    if(window.location.toString().indexOf('#modal') >= 0)
+    {
+      console.log("Reset Hashtag");
+      window.location.hash = ' ';
+      history.pushState('', document.title, window.location.pathname); // nice and clean
     }
-  });
 
-  $(document).on('click', '.portfolio-modal-dismiss', function(e) {
+    e.preventDefault(); // no page reload
+    closeModal(e);
+  }
+
+  // Close Modal
+  function closeModal(e) {
     e.preventDefault();
     $.magnificPopup.close();
+  }
+  
+  /// Modal dismiss click event
+  $(document).on('click', '.portfolio-modal-dismiss', dismissModal);
+  // Modal open click event
+  $(document).on('click', '.portfolio-item', openModal);
+  
+  // Front/back button event
+  $(window).on('popstate', function(e) {
+    // Only if the window location doesn't contain #modal
+    if(window.location.toString().indexOf('#modal') == -1)
+      closeModal(e);
   });
-
+  
+  /* ==================== CONTACT FORM ==================== */
   // Floating label headings for the contact form
   $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
