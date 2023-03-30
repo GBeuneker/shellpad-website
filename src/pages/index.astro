@@ -1,0 +1,18 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/organisms/header.svelte";
+import Footer from "../components/organisms/footer.svelte";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="flex flex-col">
+    <Header title={SITE_TITLE} />
+    <main class="flex-grow"></main>
+    <Footer />
+  </body>
+</html>
