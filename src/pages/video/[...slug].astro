@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import ProjectDetails from "../../components/organisms/project-details.svelte";
+import Footer from "../../components/organisms/footer.svelte";
+import Header from "../../components/organisms/header.svelte";
+import VideoDetails from "../../components/organisms/video-details.svelte";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("video");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+const post = Astro.props;
+const { Content } = await post.render();
+const { title, description, pubDate, videoId } = post.data;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} />
+  </head>
+  <body class="flex flex-col">
+    <Header />
+    <main class="flex-grow">
+      <VideoDetails {title} date={pubDate} {videoId}>
+        <Content />
+      </VideoDetails>
+    </main>
+
+    <Footer />
+  </body>
+</html>
