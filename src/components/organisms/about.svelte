@@ -24,16 +24,16 @@
     alt="shellpad"
   />
 
-  <div class="absolute right-[80px] bottom-[8px] bg-primary/70 rounded-full h-5 w-5" />
-  <div class="absolute right-[120px] bottom-[30px] bg-primary/60 rounded-full h-5 w-5" />
+  <div class="absolute right-[80px] bottom-[30px] bg-primary/70 rounded-full h-5 w-5" />
+  <div class="absolute right-[120px] bottom-[8px] bg-primary/60 rounded-full h-5 w-5" />
 
-  <div class="absolute right-[160px] bottom-[8px] bg-primary/50 rounded-full h-5 w-5" />
-  <div class="absolute right-[200px] bottom-[30px] bg-primary/40 rounded-full h-5 w-5" />
+  <div class="absolute right-[160px] bottom-[30px] bg-primary/50 rounded-full h-5 w-5" />
+  <div class="absolute right-[200px] bottom-[8px] bg-primary/40 rounded-full h-5 w-5" />
 
-  <div class="absolute right-[240px] bottom-[8px] bg-primary/30 rounded-full h-5 w-5" />
-  <div class="absolute right-[280px] bottom-[30px] bg-primary/20 rounded-full h-5 w-5" />
+  <div class="absolute right-[240px] bottom-[30px] bg-primary/30 rounded-full h-5 w-5" />
+  <div class="absolute right-[280px] bottom-[8px] bg-primary/20 rounded-full h-5 w-5" />
 
-  <div class="absolute right-[320px] bottom-[8px] bg-primary/10 rounded-full h-5 w-5" />
+  <div class="absolute right-[320px] bottom-[30px] bg-primary/10 rounded-full h-5 w-5" />
 
   <img
     class="absolute right-0 bottom-2 h-32  translate-x-[60%]"

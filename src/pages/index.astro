@@ -1,10 +1,25 @@
 ---
+import { getCollection } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/organisms/header.svelte";
-import Footer from "../components/organisms/footer.svelte";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import Section from "../components/organisms/section.svelte";
 import About from "../components/organisms/about.svelte";
+import Footer from "../components/organisms/footer.svelte";
+import Header from "../components/organisms/header.svelte";
+import ProjectList from "../components/organisms/project-list.svelte";
+import Section from "../components/organisms/section.svelte";
+import VideoList from "../components/organisms/video-list.svelte";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+
+const games = (await getCollection("game"))
+  .filter((g) => g.data.highlighted)
+  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const web = (await getCollection("web"))
+  .filter((g) => g.data.highlighted)
+  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const video = (await getCollection("video"))
+  .filter((g) => g.data.highlighted)
+  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 ---
 
 <!DOCTYPE html>
@@ -16,9 +31,19 @@ import About from "../components/organisms/about.svelte";
     <Header />
     <main class="flex-grow">
       <About />
-      <Section title="Portfolio" color={"green"}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis impedit error placeat pariatur beatae quam
-        magni adipisci nulla asperiores, in animi tempora ut. Tenetur, est cupiditate? Sunt, sequi laudantium.
+      <Section title="Our Projects" color={"green"}>
+        <div>
+          <h3>Games</h3>
+          <ProjectList projects={games} />
+        </div>
+        <div>
+          <h3>Web</h3>
+          <ProjectList projects={web} />
+        </div>
+        <div>
+          <h3>Videos</h3>
+          <VideoList videos={video} />
+        </div>
       </Section>
     </main>
 
