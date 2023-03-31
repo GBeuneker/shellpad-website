@@ -4,7 +4,7 @@
 
 <div class:light={color === "light"} class="flex items-center w-full max-w-xs my-6">
   <hr />
-  <img class="h-8 mx-2" src="src/assets/img/shellpad_shell.svg" alt="shell" />
+  <img class="h-8 mx-2" src="/shellpad_shell.svg" alt="shell" />
   <hr />
 </div>
 

@@ -6,7 +6,7 @@ import Footer from "../../components/organisms/footer.svelte";
 import Header from "../../components/organisms/header.svelte";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("game");
+  const posts = await getCollection("web");
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: post,

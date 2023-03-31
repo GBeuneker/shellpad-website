@@ -5,12 +5,6 @@ pubDate: "2011-05-04"
 videoId: 6axMw13x3G0
 ---
 
-## Details
-
-**Video Title:** {{page.title}}  
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
-**Video Link:** <https://www.youtube.com/watch?v={{page.videoId}}>
-
 ## Description
 
 After months of working, filming and delaying we have finally released our video: 100 ways to die in Portal. The video shows 100 comedic ways to die with references to the game. 100 ways to die has been done before, such as 100 ways to die in gmod and 100 ways to die in halo. But it had never been done in Portal so we thought it would be up to us to do it.

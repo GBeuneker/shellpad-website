@@ -5,11 +5,6 @@ pubDate: "2017-02-28"
 videoId: _SmPR5mvH7w
 ---
 
-## Details
-
-**Video Title:** {{page.title}}  
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
-**Video Link:** <https://www.youtube.com/watch?v={{page.videoId}}>
 
 ## Description
 

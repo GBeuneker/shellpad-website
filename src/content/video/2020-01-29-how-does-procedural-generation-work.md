@@ -6,11 +6,6 @@ videoId: -POwgollFeY
 highlighted: true
 ---
 
-## Details
-
-**Video Title:** {{page.title}}  
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
-**Video Link:** <https://www.youtube.com/watch?v={{page.videoId}}>
 
 ## Description
 

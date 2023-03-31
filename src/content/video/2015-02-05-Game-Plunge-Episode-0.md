@@ -5,11 +5,6 @@ pubDate: "2015-02-05"
 videoId: VcXizxRypds
 ---
 
-## Details
-
-**Video Title:** {{page.title}}  
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
-**Video Link:** <https://www.youtube.com/watch?v={{page.videoId}}>
 
 ## Description
 

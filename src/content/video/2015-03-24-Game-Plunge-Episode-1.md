@@ -5,11 +5,6 @@ pubDate: "2015-03-24"
 videoId: gA35mbXENdc
 ---
 
-## Details
-
-**Video Title:** {{page.title}}  
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
-**Video Link:** <https://www.youtube.com/watch?v={{page.videoId}}>
 
 ## Description
 

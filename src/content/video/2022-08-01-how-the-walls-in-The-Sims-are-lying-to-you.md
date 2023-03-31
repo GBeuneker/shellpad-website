@@ -5,11 +5,6 @@ pubDate: "2022-08-01"
 videoId: S_pYQ9xg460
 ---
 
-## Details
-
-**Video Title:** {{page.title}}  
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
-**Video Link:** <https://www.youtube.com/watch?v={{page.videoId}}>
 
 ## Description
 
