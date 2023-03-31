@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import BaseHead from "../../components/BaseHead.astro";
+import BaseDocument from "../../components/BaseDocument.astro";
 import ProjectDetails from "../../components/organisms/project-details.svelte";
-import Footer from "../../components/organisms/footer.svelte";
-import Header from "../../components/organisms/header.svelte";
 
 export async function getStaticPaths() {
   const posts = await getCollection("game");
@@ -17,18 +15,8 @@ const { Content } = await post.render();
 const { title, description, pubDate, heroImage } = post.data;
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead {title} {description} />
-  </head>
-  <body class="flex flex-col">
-    <Header />
-    <main class="flex-grow">
-      <ProjectDetails {title} date={pubDate} {heroImage}>
-        <Content />
-      </ProjectDetails>
-    </main>
-
-    <Footer />
-  </body>
-</html>
+<BaseDocument {title} {description}>
+  <ProjectDetails {title} date={pubDate} {heroImage}>
+    <Content />
+  </ProjectDetails>
+</BaseDocument>

@@ -8,6 +8,7 @@ import ProjectList from "../components/organisms/project-list.svelte";
 import Section from "../components/organisms/section.svelte";
 import VideoList from "../components/organisms/video-list.svelte";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import BaseDocument from "../components/BaseDocument.astro";
 
 const games = (await getCollection("game"))
   .filter((g) => g.data.highlighted)
@@ -22,31 +23,20 @@ const video = (await getCollection("video"))
   .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body class="flex flex-col">
-    <Header />
-    <main class="flex-grow">
-      <About />
-      <Section title="Our Projects" color={"green"}>
-        <div>
-          <h3>Games</h3>
-          <ProjectList projects={games} />
-        </div>
-        <div>
-          <h3>Web</h3>
-          <ProjectList projects={web} />
-        </div>
-        <div>
-          <h3>Videos</h3>
-          <VideoList videos={video} />
-        </div>
-      </Section>
-    </main>
-
-    <Footer />
-  </body>
-</html>
+<BaseDocument>
+  <About />
+  <Section title="Our Projects" color={"green"}>
+    <div>
+      <h3>Games</h3>
+      <ProjectList projects={games} />
+    </div>
+    <div>
+      <h3>Web</h3>
+      <ProjectList projects={web} />
+    </div>
+    <div>
+      <h3>Videos</h3>
+      <VideoList videos={video} />
+    </div>
+  </Section>
+</BaseDocument>

@@ -1,0 +1,15 @@
+---
+import "../styles/global.scss";
+import Header from "../components/organisms/header.svelte";
+import Footer from "../components/organisms/footer.svelte";
+---
+
+<body class="flex flex-col">
+  <Header />
+
+  <main class="flex-grow">
+    <slot />
+  </main>
+
+  <Footer />
+</body>
