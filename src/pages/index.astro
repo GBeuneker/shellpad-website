@@ -1,14 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
+import BaseDocument from "../components/BaseDocument.astro";
 import About from "../components/organisms/about.svelte";
-import Footer from "../components/organisms/footer.svelte";
-import Header from "../components/organisms/header.svelte";
 import ProjectList from "../components/organisms/project-list.svelte";
 import Section from "../components/organisms/section.svelte";
-import VideoList from "../components/organisms/video-list.svelte";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
-import BaseDocument from "../components/BaseDocument.astro";
 
 const games = (await getCollection("game"))
   .filter((g) => g.data.highlighted)
@@ -36,7 +31,7 @@ const video = (await getCollection("video"))
     </div>
     <div>
       <h3>Videos</h3>
-      <VideoList videos={video} />
+      <ProjectList projects={video} />
     </div>
   </Section>
 </BaseDocument>

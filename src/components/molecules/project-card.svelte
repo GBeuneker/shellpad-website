@@ -1,11 +1,23 @@
 <script lang="ts">
   import type { CollectionEntry } from "astro:content";
 
-  export let projectEntry: CollectionEntry<"game"> | CollectionEntry<"web"> | CollectionEntry<"software">;
+  export let projectEntry:
+    | CollectionEntry<"game">
+    | CollectionEntry<"web">
+    | CollectionEntry<"software">
+    | CollectionEntry<"video">;
+
+  function imageSrc() {
+    if (projectEntry.collection === "video") {
+      return `https://img.youtube.com/vi/${projectEntry.data.videoId}/0.jpg`;
+    }
+
+    return projectEntry.data.heroImage;
+  }
 </script>
 
 <a href={`/${projectEntry.collection}/${projectEntry.slug}/`} class="p-5 rounded-xl transition-all hover:shadow-lg  ">
-  <img class="w-full aspect-video" src={projectEntry.data.heroImage} alt="project" />
+  <img class="w-full aspect-video" src={imageSrc()} alt="project" />
   <h4>{projectEntry.data.title}</h4>
   <p>{projectEntry.data.description}</p>
 </a>

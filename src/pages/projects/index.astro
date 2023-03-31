@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import BaseDocument from "../../components/BaseDocument.astro";
+import ProjectExplorer from "../../components/organisms/project-explorer.svelte";
+import Section from "../../components/organisms/section.svelte";
+
+const game = (await getCollection("game")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const web = (await getCollection("web")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const video = (await getCollection("video")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const software = (await getCollection("software")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+---
+
+<BaseDocument>
+  <Section title="Projects" color="white">
+    <ProjectExplorer client:only game={game} web={web} video={video} software={software} />
+  </Section>
+</BaseDocument>
