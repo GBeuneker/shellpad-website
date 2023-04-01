@@ -15,7 +15,7 @@ This was a Ludum Dare game jam submission with the theme “Unconventional weapo
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/i-hate-golf/61242)

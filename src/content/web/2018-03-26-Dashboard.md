@@ -15,6 +15,6 @@ Programming: Geert Beuneker.
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Language:** HTML, Javascript, CSS  
 **Link:** [Source Code](https://drive.google.com/uc?export=download&id=1NzKGJNaSIgxqrM7JMBYyPe9seDVzvN8g)

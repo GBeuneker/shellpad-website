@@ -17,7 +17,7 @@ This was my very first sizeable solo project. A friend of mine is really into in
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** XNA  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/futransport/33035)

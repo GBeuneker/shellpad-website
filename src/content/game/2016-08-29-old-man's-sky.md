@@ -24,7 +24,7 @@ I made this game for the gamejam Ludum Dare 36 with the theme “Ancient Technol
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/old-man-s-sky/183625)

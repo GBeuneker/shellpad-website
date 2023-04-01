@@ -15,7 +15,7 @@ I really wanted to speed up my workflow for creating games. Using XNA was alrigh
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/cube-blast/36412)

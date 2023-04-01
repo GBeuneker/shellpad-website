@@ -15,7 +15,7 @@ Programming: Geert Beuneker.
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Framework:** OpenCV  
 **Language:** C++  
 **Link:** [Source Code](https://drive.google.com/open?id=0B-BSZRLf8PuDUUNHOExQS3JaRVU)  
