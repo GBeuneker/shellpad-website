@@ -17,8 +17,9 @@
   type Filter = (input: Project) => boolean;
 
   const projects: Project[] = [...game, ...web, ...software, ...video];
-  let search = "";
   let showFilters = true;
+
+  $: search = "";
 
   $: filters = {
     game: { filter: (input: Project) => input.collection === "game", active: false },
@@ -46,9 +47,9 @@
     return result;
   });
 
-  function peekFilter(filter: Filter) {
+  $: peekFilter = (filter: Filter) => {
     return filteredProjects.filter(filter);
-  }
+  };
 </script>
 
 <div class="relative flex gap-2">
