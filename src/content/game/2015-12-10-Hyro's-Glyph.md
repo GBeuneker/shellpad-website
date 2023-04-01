@@ -15,7 +15,7 @@ This was made for the HKU Minor Game Design during the “Design for Space” pr
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](https://gearedgames.itch.io/hyros-glyph?secret=huayvvKT30vfgLQSV83GlRXJM)

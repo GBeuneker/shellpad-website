@@ -15,7 +15,7 @@ This was my submission for the Ludum Dare game jam with the theme “You are the
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/hug-me-please/88420)

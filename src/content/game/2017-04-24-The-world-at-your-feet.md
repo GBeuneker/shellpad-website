@@ -20,7 +20,7 @@ I made this game for the gamejam Ludum Dare 38 with the theme “A tiny world”
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/TWAYF/251647)

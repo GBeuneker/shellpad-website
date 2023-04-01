@@ -15,7 +15,7 @@ This was a game I made as a gift for my girlfriend. She eats a lot of apples, so
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](https://play.google.com/store/apps/details?id=com.ShellpadInteractive.Apple_Eater)

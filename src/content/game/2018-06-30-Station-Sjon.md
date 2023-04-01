@@ -16,7 +16,7 @@ This product was made for Dropstuff, Archief beeld & geluid Hilversum and the to
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity & OpenCV  
 **Language:** C#, C++  
 **Link:** [Download](https://gearedgames.itch.io/station-sjon)

@@ -24,7 +24,7 @@ To gain more insight into how raytracing works I built a path tracer. It uses se
 Programming: Geert Beuneker.  
 
 ## Details
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Framework:** Basic rendering template made by Jacco Bikker.  
 **Language:** C++  
 **Link:** [Source Code](https://gitlab.com/GBeuneker/RayTracer/-/archive/master/RayTracer-master.zip)  

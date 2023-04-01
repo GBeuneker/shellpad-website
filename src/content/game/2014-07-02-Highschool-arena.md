@@ -15,7 +15,7 @@ I created another version of my highschool previously and played that map with s
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Source  
 **Tool:** Hammer Editor  
 **Link:** [Download](https://www.dropbox.com/sh/80efa6wbdko2dj0/AACQriSVSyWIddoq6uJ0B9MJa?dl=1)

@@ -15,7 +15,7 @@ I wanted to gain some more experience with hammer. I thought it’d be fun to be
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Source  
 **Tool:** Hammer Editor  
 **Link:** [Download](https://www.dropbox.com/sh/y69c36r4w4p46bs/AABoaUKkWSmFEFEGKHf5BiVNa?dl=1)

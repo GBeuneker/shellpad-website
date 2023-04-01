@@ -24,7 +24,7 @@ To gain insight into how caching works on a computer, we used a C++ framework in
 Programming: Geert Beuneker.  
 
 ## Details
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Framework:** C++ framework  
 **Language:** C++  
 **Link:** [Source Code](https://drive.google.com/uc?export=download&id=1XsOcSu1JhXj7ZBajIvyqrwJbRpB4Z0Ak)  

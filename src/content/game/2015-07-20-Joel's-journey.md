@@ -15,7 +15,7 @@ This was the first game I created as part of my Game a Week challenge. As such t
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Unity  
 **Language:** C#  
 **Link:** [Download](http://gamejolt.com/games/joel-s-journey/81121)

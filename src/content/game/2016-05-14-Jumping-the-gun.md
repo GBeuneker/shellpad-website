@@ -16,7 +16,7 @@ I wanted to gain some more experience in Game Maker. I wanted to know how much q
 
 ## Details
 
-**Release Date:** {{page.date | date:'%B %d, %Y'}}  
+
 **Engine:** Game Maker: Studio  
 **Language:** GML  
 **Link:** [Download](https://gearedgames.itch.io/jumping-the-gun)
