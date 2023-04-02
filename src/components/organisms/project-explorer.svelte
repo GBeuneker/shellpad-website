@@ -54,7 +54,7 @@
 
 <div class="relative flex gap-2">
   <div>
-    <div class="sticky top-2">
+    <div class="sticky top-16">
       <button
         class="md:hidden w-8 h-8 absolute -right-2 translate-x-full top-0 hover:bg-primary-lighter rounded-full transition-all p-1 flex items-center justify-center bg-light"
         class:rotate-180={!showFilters}
