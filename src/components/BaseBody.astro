@@ -1,10 +1,14 @@
 ---
-import "../styles/global.scss";
-import Header from "../components/organisms/header.svelte";
 import Footer from "../components/organisms/footer.svelte";
+import Header from "../components/organisms/header.svelte";
+import "../styles/global.scss";
+import Navbar from "./organisms/navbar.svelte";
+
+const url = Astro.url.pathname;
 ---
 
 <body class="flex flex-col">
+  <Navbar client:only url={url} />
   <Header />
 
   <main class="flex-grow">

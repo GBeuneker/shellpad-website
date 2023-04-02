@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "Shellpad Interactive";
 export const SITE_DESCRIPTION =
-  "Shellpad Interactive founded in 2017 develops interactive experiences, games, tools and websites. We promise to deliver modular, scalable, high quality products and services. ";
+  "Shellpad Interactive founded in 2017 develops interactive experiences, games, tools and websites. We promise to deliver modular, scalable, high quality products and services.";

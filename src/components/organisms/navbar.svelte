@@ -1,6 +1,6 @@
 <script>
   export let url = "";
-  $: scrollY = window.scrollY;
+  let scrollY = window.scrollY;
 </script>
 
 <svelte:window
