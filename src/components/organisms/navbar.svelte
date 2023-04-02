@@ -3,11 +3,7 @@
   let scrollY = window.scrollY;
 </script>
 
-<svelte:window
-  on:scroll={(e) => {
-    scrollY = window.scrollY;
-  }}
-/>
+<svelte:window bind:scrollY />
 <nav
   class="transition-all fixed top-0 w-full flex gap-2 justify-center text-xl  text-dark py-2 z-50"
   class:nav--filled={scrollY > 10}
