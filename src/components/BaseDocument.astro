@@ -2,12 +2,14 @@
 import BaseHead from "./BaseHead.astro";
 import BaseBody from "./BaseBody.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import Navbar from "./organisms/navbar.svelte";
 
 let { title = SITE_TITLE, description = SITE_DESCRIPTION, image = "/placeholder-social.jpg" } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+  <Navbar />
   <BaseHead {title} {description} {image} />
   <BaseBody><slot /></BaseBody>
 </html>
