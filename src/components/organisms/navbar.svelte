@@ -1,8 +1,17 @@
 <script>
   export let url = "";
+  $: scrollY = window.scrollY;
 </script>
 
-<nav class="fixed top-0 w-full flex gap-2 justify-center text-xl bg-light text-dark shadow py-2 z-50">
+<svelte:window
+  on:scroll={(e) => {
+    scrollY = window.scrollY;
+  }}
+/>
+<nav
+  class="transition-all fixed top-0 w-full flex gap-2 justify-center text-xl  text-dark py-2 z-50"
+  class:nav--filled={scrollY > 10}
+>
   <a href="/" class:active={url === "/"}>Home</a>
   <a
     href="/projects"
@@ -16,6 +25,12 @@
 </nav>
 
 <style lang="scss">
+  .nav {
+    &--filled {
+      @apply bg-white shadow py-3;
+    }
+  }
+
   a {
     @apply transition-all font-bold;
     &.active,

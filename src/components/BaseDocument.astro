@@ -10,8 +10,8 @@ const url = Astro.url.pathname;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-  <Navbar url={url} />
+<html>
+  <Navbar client:only url={url} />
   <BaseHead {title} {description} {image} />
   <BaseBody><slot /></BaseBody>
 </html>
