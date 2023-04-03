@@ -21,7 +21,7 @@
   href={`/projects/${projectEntry.collection}/${projectEntry.slug}/`}
   class="p-5 rounded-xl transition-all hover:shadow-lg  "
 >
-  <img class="w-full aspect-video" src={imageSrc()} alt="project" />
+  <img class="object-cover w-full aspect-video" src={imageSrc()} alt="project" />
   <p class="mb-2">Date published: <FormattedDate date={projectEntry.data.pubDate} /></p>
   <h4>{projectEntry.data.title}</h4>
   <p>{projectEntry.data.description}</p>
