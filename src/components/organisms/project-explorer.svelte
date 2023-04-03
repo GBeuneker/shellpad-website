@@ -28,24 +28,26 @@
     video: { filter: (input: Project) => input.collection === "video", active: false },
   };
 
-  $: filteredProjects = projects.filter((x) => {
-    let result = true;
+  $: filteredProjects = projects
+    .filter((x) => {
+      let result = true;
 
-    Object.values(filters).forEach((filterValue) => {
-      if (filterValue.active) {
-        result = result && filterValue.filter(x);
+      Object.values(filters).forEach((filterValue) => {
+        if (filterValue.active) {
+          result = result && filterValue.filter(x);
+        }
+      });
+
+      if (search) {
+        result =
+          result &&
+          (x.data.title.toLowerCase().includes(search.toLowerCase()) ||
+            x.data.description.toLowerCase().includes(search.toLowerCase()));
       }
-    });
 
-    if (search) {
-      result =
-        result &&
-        (x.data.title.toLowerCase().includes(search.toLowerCase()) ||
-          x.data.description.toLowerCase().includes(search.toLowerCase()));
-    }
-
-    return result;
-  });
+      return result;
+    })
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   $: peekFilter = (filter: Filter) => {
     return filteredProjects.filter(filter);

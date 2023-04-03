@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import BaseDocument from "../../components/BaseDocument.astro";
-import VideoDetails from "../../components/organisms/video-details.svelte";
+import BaseDocument from "../../../components/BaseDocument.astro";
+import VideoDetails from "../../../components/organisms/video-details.svelte";
 
 export async function getStaticPaths() {
   const posts = await getCollection("video");

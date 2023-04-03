@@ -7,15 +7,15 @@ import Section from "../components/organisms/section.svelte";
 
 const games = (await getCollection("game"))
   .filter((g) => g.data.highlighted)
-  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const web = (await getCollection("web"))
   .filter((g) => g.data.highlighted)
-  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const video = (await getCollection("video"))
   .filter((g) => g.data.highlighted)
-  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseDocument>
