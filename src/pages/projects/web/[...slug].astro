@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import BaseDocument from "../../components/BaseDocument.astro";
-import ProjectDetails from "../../components/organisms/project-details.svelte";
+import BaseDocument from "../../../components/BaseDocument.astro";
+import ProjectDetails from "../../../components/organisms/project-details.svelte";
 
 export async function getStaticPaths() {
   const posts = await getCollection("web");

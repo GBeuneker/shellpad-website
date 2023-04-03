@@ -9,14 +9,7 @@
   class:nav--filled={scrollY > 10}
 >
   <a href="/" class:active={url === "/"}>Home</a>
-  <a
-    href="/projects"
-    class:active={url.includes("/projects") ||
-      url.includes("/game") ||
-      url.includes("/web") ||
-      url.includes("/software") ||
-      url.includes("/video")}>Projects</a
-  >
+  <a href="/projects" class:active={url.includes("/projects")}>Projects</a>
   <a href="/about" class:active={url.includes("/about")}>About</a>
 </nav>
 
