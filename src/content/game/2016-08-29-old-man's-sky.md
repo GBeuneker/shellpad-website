@@ -3,7 +3,6 @@ title: "Old Man's Sky"
 description: "A classic rendition of No Man's Sky using oldschool Atari 2600 graphics and control schemes."
 pubDate: "2016-08-29"
 heroImage: "/oldmanssky-thumbnail.jpg"
-highlighted: true
 ---
 
 <!--content-->

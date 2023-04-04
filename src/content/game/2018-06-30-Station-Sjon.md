@@ -10,12 +10,15 @@ highlighted: true
 
 This game was made in collaboration with the HKU. Station Sjon was meant to be played in the town of Hilversum on giant public screens with webcams equipped. The game was played and showcased at the station square in Hilversum.
 
+<br>
+
+![Stationsjon](/stationsjon.jpg)
+
 ## Motivation
 
 This product was made for Dropstuff, Archief beeld & geluid Hilversum and the township of Hilversum in collaboration with the HKU. Our goal was to make a product that was draws the public's attention and was fun, playable and understandable for everybody.
 
 ## Details
-
 
 **Engine:** Unity & OpenCV  
 **Language:** C#, C++  
