@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   export let url = "";
-  let scrollY = window.scrollY;
+  let scrollY = 0;
 </script>
 
 <svelte:window bind:scrollY />

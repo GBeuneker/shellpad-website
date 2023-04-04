@@ -17,7 +17,7 @@
   type Filter = (input: Project) => boolean;
 
   const projects: Project[] = [...game, ...web, ...software, ...video];
-  let showFilters = true;
+  let showFilters = false;
 
   $: search = "";
 

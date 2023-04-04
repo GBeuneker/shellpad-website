@@ -8,7 +8,7 @@ const url = Astro.url.pathname;
 ---
 
 <body class="flex flex-col">
-  <Navbar client:only url={url} />
+  <Navbar client:load url={url} />
   <Header />
 
   <main class="flex-grow">
