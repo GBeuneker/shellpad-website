@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { CollectionEntry } from "astro:content";
+  import { onMount } from "svelte";
   import InputCheckboxFilter from "../atoms/input-checkbox-filter.svelte";
   import InputText from "../atoms/input-text.svelte";
   import ProjectList from "./project-list.svelte";
@@ -15,6 +16,7 @@
     | CollectionEntry<"software">
     | CollectionEntry<"video">;
   type Filter = (input: Project) => boolean;
+  type SearchFilter = { filter: Filter; active: boolean };
 
   const projects: Project[] = [...game, ...web, ...software, ...video];
   let showFilters = false;
@@ -26,6 +28,11 @@
     web: { filter: (input: Project) => input.collection === "web", active: false },
     software: { filter: (input: Project) => input.collection === "software", active: false },
     video: { filter: (input: Project) => input.collection === "video", active: false },
+  } as {
+    game: SearchFilter;
+    web: SearchFilter;
+    software: SearchFilter;
+    video: SearchFilter;
   };
 
   $: filteredProjects = projects
@@ -52,6 +59,49 @@
   $: peekFilter = (filter: Filter) => {
     return filteredProjects.filter(filter);
   };
+
+  onMount(async () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.forEach((value, key, _) => {
+      if (key === "game" || key === "web" || key === "software" || key === "video") {
+        filters[key].active = value === "true";
+      }
+
+      if (key === "search") {
+        search = value;
+      }
+    });
+  });
+
+  function setQueryParam(key: string, value: string) {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (value) {
+      urlParams.set(key, value);
+    } else {
+      urlParams.delete(key);
+    }
+
+    let url = window.location.pathname;
+    let params = urlParams.toString();
+
+    if (params) {
+      url += `?${params}`;
+    }
+
+    window.history.replaceState(null, "", url);
+
+    window.history.replaceState(null, "", url);
+  }
+
+  function setFilter(key: "game" | "web" | "software" | "video", active: boolean) {
+    setQueryParam(key, active ? active.toString() : "");
+    filters[key].active = active;
+  }
+
+  function setSearch(input: string) {
+    setQueryParam("search", input);
+    search = input;
+  }
 </script>
 
 <div class="relative flex gap-2">
@@ -71,23 +121,29 @@
         <span class="font-bold text">Categories</span>
 
         <InputCheckboxFilter
-          on:checked={(e) => (filters.game.active = e.detail)}
+          checked={filters.game.active}
+          on:checked={(e) => setFilter("game", e.detail)}
           amount={peekFilter(filters.game.filter).length}>Games</InputCheckboxFilter
         >
         <InputCheckboxFilter
-          on:checked={(e) => (filters.web.active = e.detail)}
+          checked={filters.web.active}
+          on:checked={(e) => setFilter("web", e.detail)}
           amount={peekFilter(filters.web.filter).length}>Web</InputCheckboxFilter
         >
         <InputCheckboxFilter
-          on:checked={(e) => (filters.software.active = e.detail)}
+          checked={filters.software.active}
+          on:checked={(e) => setFilter("software", e.detail)}
           amount={peekFilter(filters.software.filter).length}>Software</InputCheckboxFilter
         >
         <InputCheckboxFilter
-          on:checked={(e) => (filters.video.active = e.detail)}
+          checked={filters.video.active}
+          on:checked={(e) => setFilter("video", e.detail)}
           amount={peekFilter(filters.video.filter).length}>Video</InputCheckboxFilter
         >
 
-        <InputText name="search" bind:value={search}><span class="font-bold">Search</span></InputText>
+        <InputText name="search" on:input={(e) => setSearch(e.detail)} bind:value={search}
+          ><span class="font-bold">Search</span></InputText
+        >
       </div>
     </div>
   </div>
