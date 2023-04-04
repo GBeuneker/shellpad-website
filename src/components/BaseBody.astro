@@ -7,6 +7,17 @@ import Navbar from "./organisms/navbar.svelte";
 const url = Astro.url.pathname;
 ---
 
+<script>
+  window.addEventListener("load", () => {
+    if (window.scrollY !== 0) {
+      return;
+    }
+
+    const element = document.getElementById("scrollTarget");
+    element?.scrollIntoView();
+  });
+</script>
+
 <body class="flex flex-col">
   <Navbar client:load url={url} />
   <Header />

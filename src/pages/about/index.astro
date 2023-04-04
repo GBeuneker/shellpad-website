@@ -4,14 +4,8 @@ import AboutDetails from "../../components/organisms/about-details.svelte";
 import Section from "../../components/organisms/section.svelte";
 ---
 
-<script>
-  window.addEventListener("load", () => {
-    const element = document.getElementById("about");
-    element?.scrollIntoView();
-  });
-</script>
 <BaseDocument>
-  <div id="about">
+  <div id="scrollTarget">
     <Section title="About" color="white">
       <AboutDetails />
     </Section>
