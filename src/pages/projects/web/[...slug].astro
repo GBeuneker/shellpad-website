@@ -15,6 +15,12 @@ const { Content } = await post.render();
 const { title, description, pubDate, heroImage } = post.data;
 ---
 
+<script>
+  window.addEventListener("load", () => {
+    const element = document.getElementById("project");
+    element?.scrollIntoView();
+  });
+</script>
 <BaseDocument {title} {description}>
   <ProjectDetails {title} date={pubDate} {heroImage}>
     <Content />

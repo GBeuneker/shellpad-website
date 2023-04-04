@@ -4,8 +4,16 @@ import AboutDetails from "../../components/organisms/about-details.svelte";
 import Section from "../../components/organisms/section.svelte";
 ---
 
+<script>
+  window.addEventListener("load", () => {
+    const element = document.getElementById("about");
+    element?.scrollIntoView();
+  });
+</script>
 <BaseDocument>
-  <Section title="About" color="white">
-    <AboutDetails />
-  </Section>
+  <div id="about">
+    <Section title="About" color="white">
+      <AboutDetails />
+    </Section>
+  </div>
 </BaseDocument>

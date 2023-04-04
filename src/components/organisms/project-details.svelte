@@ -7,7 +7,7 @@
   export let heroImage = "";
 </script>
 
-<article>
+<article id="project">
   <Section {title} color="green">
     <div class="mx-auto max-w-3xl">
       <img class="mx-auto" src={heroImage} alt="" />
