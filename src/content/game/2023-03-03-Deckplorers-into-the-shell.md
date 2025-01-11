@@ -8,7 +8,7 @@ highlighted: true
 
 ## Description
 
-A real-time deck-building roguelike game inspired by Slay the Spire. It's supposed to become a hybrid of Slay the Spire, Binding of Isaac and Enter the Gungeon.
+A real-time deck-building roguelike game inspired by Slay the Spire. It's a hybrid of Slay the Spire, Binding of Isaac and Enter the Gungeon.
 
 ## Motivation
 
@@ -18,4 +18,5 @@ This was an idea I've had for a long time and seemed like a really fun concept. 
 
 **Framework:** Unity  
 **Language:** C#        
-**Link:** [Download](https://gamejolt.com/dashboard/games/758749)
+**Link:** <a href="https://store.steampowered.com/app/3059730/Decksplorers_Into_the_Shell/" target="_blank">Play on Steam</a>
+
