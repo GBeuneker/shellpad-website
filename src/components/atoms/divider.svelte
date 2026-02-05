@@ -8,12 +8,15 @@
   <hr />
 </div>
 
-<style>
+<style global>
+  @reference "tailwindcss";
+
   .light hr {
     @apply bg-white;
   }
 
   hr {
-    @apply h-1 bg-dark rounded flex-grow border-none;
+    @apply h-1 rounded grow border-none;
+    background-color: var(--color-dark);
   }
 </style>

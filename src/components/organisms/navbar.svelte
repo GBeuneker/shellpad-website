@@ -14,6 +14,8 @@
 </nav>
 
 <style>
+  @reference "tailwindcss";
+
   .nav--filled {
     @apply bg-white shadow py-3;
   }
@@ -24,6 +26,6 @@
 
   a.active,
   a:hover {
-    @apply text-primary;
+    color: var(--color-primary);
   }
 </style>

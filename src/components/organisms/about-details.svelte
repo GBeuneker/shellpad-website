@@ -147,6 +147,8 @@
 </Section>
 
 <style>
+  @reference "tailwindcss";
+
   p {
     @apply mb-5;
   }

@@ -21,7 +21,7 @@
   <div class="flex items-center">
     <p class="w-36">{skill.label}</p>
 
-    <div class="mx-1 flex-grow">
+    <div class="mx-1 grow">
       <ProgressBar fill={skill.fill} segments={6} />
     </div>
   </div>

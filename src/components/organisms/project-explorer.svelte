@@ -114,7 +114,7 @@
         ><img class="h-full" src="/chevron-left-solid.svg" alt="sliders" /></button
       >
 
-      <div class="md:!block" class:hidden={!showFilters}>
+      <div class="md:block!" class:hidden={!showFilters}>
         <span class="font-bold text-lg">Filters</span>
         <hr class="mb-2" />
 

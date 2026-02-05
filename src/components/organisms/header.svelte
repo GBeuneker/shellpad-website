@@ -3,9 +3,9 @@
 </script>
 
 <header class="bg-primary-lighter flex flex-col justify-center items-center py-20">
-  <img class="h-40 mb-10 ml-[45px]" src="/shellpad_full.svg" alt="shellpad logo" />
+  <img class="h-40 mb-10 ml-11.25" src="/shellpad_full.svg" alt="shellpad logo" />
   <a href="/"><h1 class="text-center">Shellpad Interactive</h1></a>
   <Divider />
 
-  <p class="text-center text-xl ">Game Developer - Web Developer - Tool Developer</p>
+  <p class="text-center text-xl">Game Developer - Web Developer - Tool Developer</p>
 </header>

@@ -22,7 +22,7 @@ const url = Astro.url.pathname;
   <Navbar client:load url={url} />
   <Header />
 
-  <main class="flex-grow">
+  <main class="grow">
     <slot />
   </main>
 
