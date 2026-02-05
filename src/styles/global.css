@@ -1,19 +1,12 @@
-@import './fonts.css' layer(base);
+@import "./fonts.css" layer(base);
 
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @utility container {
   margin-inline: auto;
   padding-inline: 0.5rem;
-  @media (width >= --theme(--breakpoint-sm)) {
-    max-width: none;
-  }
-  @media (width >= 100%) {
-    max-width: 100%;
-  }
-  @media (width >= 100%) {
-    max-width: 100%;
-  }
+  max-width: 100%;
+
   @media (width >= 1024px) {
     max-width: 1024px;
   }
