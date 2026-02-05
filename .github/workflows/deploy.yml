@@ -15,24 +15,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: latest
           cache: npm
 
-      - name: Clean and install dependencies (fix Rollup native bug)
+      - name: Clean and install dependencies
         run: |
           rm -rf node_modules package-lock.json
           npm install
 
-      - name: Build your Astro site
+      - name: Build Astro site
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
