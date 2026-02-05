@@ -15,6 +15,3 @@
     <ProjectCard projectEntry={project} />
   {/each}
 </div>
-
-<style lang="scss">
-</style>

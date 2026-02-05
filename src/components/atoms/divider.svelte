@@ -8,11 +8,9 @@
   <hr />
 </div>
 
-<style lang="scss">
-  .light {
-    hr {
-      @apply bg-white;
-    }
+<style>
+  .light hr {
+    @apply bg-white;
   }
 
   hr {

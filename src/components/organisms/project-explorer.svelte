@@ -151,6 +151,3 @@
     <ProjectList projects={filteredProjects} />
   </div>
 </div>
-
-<style lang="scss">
-</style>

@@ -146,7 +146,7 @@
   </div>
 </Section>
 
-<style lang="scss">
+<style>
   p {
     @apply mb-5;
   }
